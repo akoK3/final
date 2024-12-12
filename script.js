@@ -16,7 +16,7 @@ async function fetchdata() {
     const response = await fetch(url);
     const result = await response.json();
     console.log(result);
-    currencyObject = result; // Assign to the global variable
+    currencyObject = result; 
 
     const currencyCount = Object.keys(result.conversion_rates).length;
     const values = Object.keys(result.conversion_rates);
